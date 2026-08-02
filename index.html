@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Meenakshi Hospital — Iluppur, Tamil Nadu</title>
+<meta name="description" content="Sri Meenakshi Hospital, Iluppur — Outpatient, Laboratory, Pharmacy and X-ray facilities. Call 97864 44980.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FBF3EC;
+    --bg-panel: #FFFFFF;
+    --ink: #2B1620;
+    --ink-soft: #6B5560;
+    --maroon-900: #5C1A34;
+    --maroon-700: #7A2545;
+    --maroon-100: #F3E2E9;
+    --gold: #C99A2E;
+    --gold-dark: #A67D1F;
+    --line: #ECD9C9;
+    --radius: 16px;
+    --maxw: 1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Manrope', sans-serif; font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em; color:var(--maroon-900); margin:0;}
+  a{color:inherit;}
+  img,svg{display:block;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:12.5px; letter-spacing:0.16em; text-transform:uppercase; font-weight:800; color:var(--gold-dark);}
+  .skip-link{position:absolute; left:-999px; top:0; background:var(--maroon-900); color:#fff; padding:10px 16px; border-radius:0 0 8px 0; z-index:200;}
+  .skip-link:focus{left:0;}
+
+  /* Tamil font handling */
+  html[lang="ta"] body{font-family:'Noto Sans Tamil', 'Manrope', sans-serif;}
+  html[lang="ta"] h1, html[lang="ta"] h2, html[lang="ta"] h3, html[lang="ta"] .display{font-family:'Noto Serif Tamil', 'Fraunces', serif;}
+  html[lang="ta"] .eyebrow{letter-spacing:0.02em;}
+
+  .topstrip{background:var(--maroon-900); color:#F3E2E9; font-size:12.5px; font-weight:700; letter-spacing:0.04em; text-align:center; padding:7px 12px;}
+  .topstrip span{color:var(--gold);}
+
+  header{position:sticky; top:0; z-index:100; background:rgba(251,243,236,0.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  .headerbar{display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:14px;}
+  .brand{display:flex; align-items:center; gap:12px; text-decoration:none;}
+  .brand-mark{width:44px; height:44px; border-radius:50%; background:var(--maroon-900); display:flex; align-items:center; justify-content:center; flex-shrink:0; border:2px solid var(--gold);}
+  .brand-name{display:flex; flex-direction:column; line-height:1.15;}
+  .brand-name strong{font-family:'Fraunces', serif; font-size:18px; font-weight:700; color:var(--maroon-900);}
+  html[lang="ta"] .brand-name strong{font-family:'Noto Serif Tamil', serif;}
+  .brand-name span{font-size:12px; color:var(--ink-soft); font-weight:600;}
+  .header-right{display:flex; align-items:center; gap:14px;}
+  .lang-toggle{display:flex; border:1.5px solid var(--maroon-900); border-radius:999px; overflow:hidden; flex-shrink:0;}
+  .lang-btn{border:none; background:transparent; color:var(--maroon-900); font-weight:800; font-size:13px; padding:8px 14px; cursor:pointer; font-family:'Manrope',sans-serif;}
+  .lang-btn.active{background:var(--maroon-900); color:#fff;}
+  .lang-btn:focus-visible{outline:2px solid var(--gold-dark); outline-offset:-2px;}
+  .call-pill{display:flex; align-items:center; gap:8px; background:var(--gold); color:var(--maroon-900); padding:10px 18px; border-radius:999px; text-decoration:none; font-weight:800; font-size:14.5px; white-space:nowrap; transition:background .15s ease, transform .15s ease;}
+  .call-pill:hover{background:var(--gold-dark); color:#fff; transform:translateY(-1px);}
+  .call-pill:focus-visible, a:focus-visible, button:focus-visible{outline:3px solid var(--maroon-700); outline-offset:2px;}
+
+  .hero{padding:72px 0 0; text-align:center; position:relative; overflow:hidden;}
+  .arch{width:min(720px, 92%); height:340px; margin:0 auto; background:linear-gradient(180deg, var(--maroon-900), var(--maroon-700)); border-radius:360px 360px 24px 24px; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; padding:44px 36px 0;}
+  .arch::before{content:""; position:absolute; inset:14px 14px auto 14px; height:calc(100% - 28px); border:1.5px solid rgba(201,154,46,0.55); border-radius:340px 340px 14px 14px; pointer-events:none;}
+  .arch .eyebrow{color:var(--gold);}
+  .arch h1{color:#fff; font-size:clamp(30px,4.4vw,46px); line-height:1.1; margin:12px 0 0;}
+  .arch h1 em{font-style:normal; color:var(--gold);}
+  .hero-lede{max-width:56ch; margin:26px auto 0; color:var(--ink-soft); font-size:17px;}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:center; margin-top:26px;}
+  .btn-primary{background:var(--maroon-900); color:#fff; padding:14px 26px; border-radius:10px; font-weight:800; font-size:15.5px; text-decoration:none; display:inline-flex; align-items:center; gap:10px; transition:transform .15s ease, background .15s ease; border:none; cursor:pointer;}
+  .btn-primary:hover{background:var(--maroon-700); transform:translateY(-2px);}
+  .btn-primary svg{color:var(--gold);}
+  .btn-secondary{padding:14px 24px; border-radius:10px; font-weight:700; font-size:15.5px; text-decoration:none; border:1.5px solid var(--maroon-900); color:var(--maroon-900);}
+  .btn-secondary:hover{background:var(--maroon-100);}
+
+  .dept-strip{margin-top:56px; padding-bottom:64px;}
+  .dept-row{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .dept-item{padding:26px 20px; border-right:1px solid var(--line); text-align:left; opacity:0; transform:translateY(12px); transition:opacity .5s ease, transform .5s ease;}
+  .dept-item.in{opacity:1; transform:none;}
+  .dept-item:last-child{border-right:none;}
+  .dept-num{font-family:'Fraunces', serif; font-size:13px; color:var(--gold-dark); font-weight:700; margin-bottom:10px; display:block;}
+  .dept-icon{width:30px; height:30px; color:var(--maroon-900); margin-bottom:12px;}
+  .dept-item b{display:block; font-size:16px; font-family:'Fraunces', serif; color:var(--maroon-900); font-weight:700; margin-bottom:6px;}
+  html[lang="ta"] .dept-item b{font-family:'Noto Serif Tamil', serif;}
+  .dept-item p{margin:0; font-size:13.5px; color:var(--ink-soft);}
+
+  section{padding:64px 0;}
+  .section-head{max-width:640px; margin-bottom:40px;}
+  .section-head.center{margin-left:auto; margin-right:auto; text-align:center;}
+  .section-head h2{font-size:clamp(26px,3.2vw,34px); margin-top:10px;}
+  .section-head p{color:var(--ink-soft); font-size:16px; margin-top:12px;}
+
+  .about-wrap{background:var(--maroon-900); border-radius:22px; padding:52px 44px; color:#fff;}
+  .about-wrap .eyebrow{color:var(--gold);}
+  .about-wrap h2{color:#fff; font-size:clamp(24px,3vw,30px); max-width:22ch;}
+  .about-wrap p{color:rgba(255,255,255,0.78); margin-top:14px; font-size:15.5px; max-width:58ch;}
+  .stat-rail{display:flex; gap:0; margin-top:34px; border-top:1px solid rgba(255,255,255,0.18); flex-wrap:wrap;}
+  .stat-rail .stat{flex:1; min-width:150px; padding:20px 22px 0; border-right:1px solid rgba(255,255,255,0.18);}
+  .stat-rail .stat:last-child{border-right:none;}
+  .stat b{display:block; font-family:'Fraunces', serif; font-size:26px; font-weight:700; color:var(--gold);}
+  html[lang="ta"] .stat b{font-family:'Noto Serif Tamil', serif;}
+  .stat span{font-size:12.5px; color:rgba(255,255,255,0.65); font-weight:600;}
+
+  .contact-list{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line);}
+  .contact-item{display:grid; grid-template-columns:220px 1fr; gap:24px; padding:26px 4px; border-bottom:1px solid var(--line); align-items:center;}
+  .contact-item .ic-wrap{width:44px; height:44px; border-radius:50%; background:var(--maroon-100); display:flex; align-items:center; justify-content:center;}
+  .contact-item .ic-wrap svg{width:20px; height:20px; color:var(--maroon-900);}
+  .contact-item-label{display:flex; align-items:center; gap:14px; font-family:'Fraunces', serif; font-weight:700; color:var(--maroon-900); font-size:16px;}
+  html[lang="ta"] .contact-item-label{font-family:'Noto Serif Tamil', serif;}
+  .contact-item-value a{text-decoration:none; font-weight:700; color:var(--maroon-900); font-size:17px;}
+  .contact-item-value span{color:var(--ink-soft); font-size:15px;}
+  .contact-cta{margin-top:30px; background:var(--maroon-100); border-radius:var(--radius); padding:28px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;}
+  .contact-cta b{font-family:'Fraunces', serif; font-size:18px; color:var(--maroon-900); display:block; margin-bottom:4px;}
+  html[lang="ta"] .contact-cta b{font-family:'Noto Serif Tamil', serif;}
+  .contact-cta p{margin:0; color:var(--ink-soft); font-size:14px;}
+
+  footer{border-top:1px solid var(--line); padding:32px 0 100px; color:var(--ink-soft); font-size:13.5px;}
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;}
+
+  .call-bar{position:fixed; left:0; right:0; bottom:0; z-index:150; background:var(--maroon-900); display:none; align-items:center; justify-content:center; gap:10px; padding:14px 16px; color:#fff; text-decoration:none; font-weight:800; font-size:15px; box-shadow:0 -8px 24px -12px rgba(0,0,0,0.35);}
+  .call-bar .ic{width:18px;height:18px;color:var(--gold);}
+
+  @media (max-width: 880px){
+    .arch{height:auto; padding:40px 22px 34px; border-radius:220px 220px 24px 24px;}
+    .dept-row{grid-template-columns:1fr 1fr;}
+    .dept-item{border-bottom:1px solid var(--line);}
+    .about-wrap{padding:34px 26px;}
+    .contact-item{grid-template-columns:1fr; gap:10px;}
+    .call-pill{display:none;}
+    .call-bar{display:flex;}
+    footer{padding-bottom:96px;}
+  }
+  @media (max-width: 540px){ .dept-row{grid-template-columns:1fr;} }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} .dept-item{transition:none; opacity:1; transform:none;} }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="topstrip">
+  <span data-en="For guidance before you travel, " data-ta="நீங்கள் புறப்படும் முன் வழிகாட்டுதலுக்கு ">For guidance before you travel, </span><span style="color:var(--gold)" data-en="call 97864 44980" data-ta="97864 44980 ஐ அழைக்கவும்">call 97864 44980</span><span data-en=" — our line is answered directly." data-ta=" — எங்கள் எண் நேரடியாக பதிலளிக்கப்படும்."> — our line is answered directly.</span>
+</div>
+
+<header>
+  <div class="wrap headerbar">
+    <a href="#main" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="#C99A2E" stroke-width="3.2" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-name">
+        <strong data-en="Sri Meenakshi Hospital" data-ta="ஸ்ரீ மீனாட்சி மருத்துவமனை">Sri Meenakshi Hospital</strong>
+        <span data-en="Iluppur, Tamil Nadu" data-ta="இலுப்பூர், தமிழ்நாடு">Iluppur, Tamil Nadu</span>
+      </span>
+    </a>
+    <div class="header-right">
+      <div class="lang-toggle" role="group" aria-label="Choose language">
+        <button class="lang-btn active" data-lang="en" type="button">EN</button>
+        <button class="lang-btn" data-lang="ta" type="button">தமிழ்</button>
+      </div>
+      <a class="call-pill" href="tel:+919786444980">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .5 1 1V20c0 .6-.5 1-1 1C9.6 21 3 14.4 3 6.1c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z" stroke="#5C1A34" stroke-width="1.7" stroke-linejoin="round"/></svg>
+        97864 44980
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="arch">
+        <p class="eyebrow" data-en="Iluppur's local hospital" data-ta="இலுப்பூரின் உள்ளூர் மருத்துவமனை">Iluppur's local hospital</p>
+        <h1><span data-en="Care under one roof, close to home" data-ta="ஒரே கூரையின் கீழ் கவனிப்பு, வீட்டிற்கு அருகில்">Care under one roof, close to home</span></h1>
+      </div>
+      <p class="hero-lede" data-en="Sri Meenakshi Hospital brings outpatient consultation, diagnostic laboratory, pharmacy and X-ray together — so a visit here can cover the full course of care, without a trip to the city." data-ta="ஸ்ரீ மீனாட்சி மருத்துவமனையில் வெளிநோயாளர் ஆலோசனை, நோயறிதல் ஆய்வகம், மருந்தகம் மற்றும் எக்ஸ்-ரே ஆகியவை ஒன்றாக கிடைக்கின்றன — இதனால் நகரத்திற்குச் செல்லாமலேயே முழு சிகிச்சையையும் ஒரே வருகையில் பெறலாம்.">Sri Meenakshi Hospital brings outpatient consultation, diagnostic laboratory, pharmacy and X-ray together — so a visit here can cover the full course of care, without a trip to the city.</p>
+      <div class="hero-actions">
+        <a href="tel:+919786444980" class="btn-primary">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .5 1 1V20c0 .6-.5 1-1 1C9.6 21 3 14.4 3 6.1c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span data-en="Call 97864 44980" data-ta="97864 44980 ஐ அழைக்கவும்">Call 97864 44980</span>
+        </a>
+        <a href="#facilities" class="btn-secondary" data-en="See our facilities" data-ta="எங்கள் வசதிகளைப் பார்க்க">See our facilities</a>
+      </div>
+    </div>
+
+    <div class="dept-strip wrap">
+      <div class="dept-row" id="deptRow">
+        <div class="dept-item">
+          <span class="dept-num">01</span>
+          <svg class="dept-icon" viewBox="0 0 24 24" fill="none"><path d="M8 3h8v3.2c0 .5.2 1 .6 1.3l1.8 1.8c1.6 1.6 1.6 4.1 0 5.7l-.9.9c-.4.4-.4 1 0 1.4l1.5 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 3v3.2c0 .5-.2 1-.6 1.3L5.6 9.3c-1.6 1.6-1.6 4.1 0 5.7L11 20.4c1 1 2.6 1 3.6 0l.7-.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <b data-en="OP — Outpatient" data-ta="OP — வெளிநோயாளர் பிரிவு">OP — Outpatient</b>
+          <p data-en="Walk-in consultation and general check-ups." data-ta="நேரடியாக வந்து ஆலோசனை பெறலாம், பொது பரிசோதனைகள்.">Walk-in consultation and general check-ups.</p>
+        </div>
+        <div class="dept-item">
+          <span class="dept-num">02</span>
+          <svg class="dept-icon" viewBox="0 0 24 24" fill="none"><path d="M9 2h6M10 2v6.2c0 .5-.1.9-.4 1.3L5.4 16c-1.3 1.9.1 4.5 2.4 4.5h8.4c2.3 0 3.7-2.6 2.4-4.5l-4.2-6.5c-.3-.4-.4-.8-.4-1.3V2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 15h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <b data-en="Laboratory" data-ta="ஆய்வகம்">Laboratory</b>
+          <p data-en="Blood, urine and routine diagnostic tests." data-ta="இரத்தம், சிறுநீர் மற்றும் வழக்கமான நோயறிதல் பரிசோதனைகள்.">Blood, urine and routine diagnostic tests.</p>
+        </div>
+        <div class="dept-item">
+          <span class="dept-num">03</span>
+          <svg class="dept-icon" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="7" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 7V5.5A2.5 2.5 0 0 1 10.5 3h3A2.5 2.5 0 0 1 16 5.5V7M8 12.5h8M12 9.5v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <b data-en="Pharmacy" data-ta="மருந்தகம்">Pharmacy</b>
+          <p data-en="Prescribed medicines dispensed on site." data-ta="பரிந்துரைக்கப்பட்ட மருந்துகள் இங்கேயே வழங்கப்படும்.">Prescribed medicines dispensed on site.</p>
+        </div>
+        <div class="dept-item">
+          <span class="dept-num">04</span>
+          <svg class="dept-icon" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 9c1.5 1.5 2.5-1.5 4 0s2.5-1.5 4 0 2.5-1.5 2 0M7 15c1.5 1.5 2.5-1.5 4 0s2.5-1.5 4 0 2.5-1.5 2 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <b data-en="X-ray" data-ta="எக்ஸ்-ரே">X-ray</b>
+          <p data-en="Diagnostic imaging without referral delay." data-ta="பரிந்துரை தாமதமின்றி நோயறிதல் இமேஜிங்.">Diagnostic imaging without referral delay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="facilities">
+    <div class="wrap">
+      <div class="section-head center">
+        <p class="eyebrow" data-en="Rooted in Iluppur" data-ta="இலுப்பூரில் வேரூன்றியது">Rooted in Iluppur</p>
+        <h2><span data-en="Local care, without the long trip to a bigger town" data-ta="பெரிய ஊருக்குச் செல்லாமல் உள்ளூர் சிகிச்சை">Local care, without the long trip to a bigger town</span></h2>
+      </div>
+      <div class="about-wrap">
+        <p class="eyebrow" data-en="Why we exist" data-ta="நாங்கள் ஏன் இருக்கிறோம்">Why we exist</p>
+        <h2><span data-en="So a fever, a fracture or a repeat prescription doesn't cost a whole day of travel" data-ta="காய்ச்சல், எலும்பு முறிவு அல்லது மீண்டும் மருந்து பெறுவதற்காக ஒரு முழு நாள் பயணத்தை செலவிட வேண்டியதில்லை">So a fever, a fracture or a repeat prescription doesn't cost a whole day of travel</span></h2>
+        <p data-en="Sri Meenakshi Hospital is built for the pace of a working family — quick to reach, easy to talk to, and equipped to handle most everyday medical needs on the spot, from first consultation to the medicine in your hand." data-ta="ஸ்ரீ மீனாட்சி மருத்துவமனை உழைக்கும் குடும்பங்களின் வேகத்திற்கு ஏற்றவாறு அமைக்கப்பட்டுள்ளது — எளிதில் அடையக்கூடியது, பேசுவதற்கு எளிதானது, மேலும் முதல் ஆலோசனை முதல் கையில் மருந்து கிடைக்கும் வரை பெரும்பாலான தினசரி மருத்துவ தேவைகளை உடனே கவனிக்கும் வசதி கொண்டது.">Sri Meenakshi Hospital is built for the pace of a working family — quick to reach, easy to talk to, and equipped to handle most everyday medical needs on the spot, from first consultation to the medicine in your hand.</p>
+        <div class="stat-rail">
+          <div class="stat"><b>4</b><span data-en="Core facilities under one roof" data-ta="ஒரே கூரையின் கீழ் முக்கிய வசதிகள்">Core facilities under one roof</span></div>
+          <div class="stat"><b>OP</b><span data-en="Walk-in consultation" data-ta="நேரடி ஆலோசனை">Walk-in consultation</span></div>
+          <div class="stat"><b data-en="Lab" data-ta="ஆய்வகம்">Lab</b><span data-en="On-site diagnostics" data-ta="இங்கேயே நோயறிதல்">On-site diagnostics</span></div>
+          <div class="stat"><b data-en="Phone" data-ta="தொலைபேசி">Phone</b><span data-en="Guidance before you travel" data-ta="பயணத்திற்கு முன் வழிகாட்டுதல்">Guidance before you travel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-en="Reach us" data-ta="எங்களை தொடர்பு கொள்ள">Reach us</p>
+        <h2><span data-en="Get in touch" data-ta="தொடர்பு கொள்ளுங்கள்">Get in touch</span></h2>
+        <p data-en="Call ahead for guidance, or walk in directly for outpatient consultation, lab work, pharmacy or X-ray." data-ta="வழிகாட்டுதலுக்கு முன்பே அழைக்கவும், அல்லது வெளிநோயாளர் ஆலோசனை, ஆய்வக பரிசோதனை, மருந்தகம் அல்லது எக்ஸ்-ரேக்கு நேரடியாக வரலாம்.">Call ahead for guidance, or walk in directly for outpatient consultation, lab work, pharmacy or X-ray.</p>
+      </div>
+      <div class="contact-list">
+        <div class="contact-item">
+          <div class="contact-item-label">
+            <span class="ic-wrap"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .5 1 1V20c0 .6-.5 1-1 1C9.6 21 3 14.4 3 6.1c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+            <span data-en="Phone" data-ta="தொலைபேசி">Phone</span>
+          </div>
+          <div class="contact-item-value"><a href="tel:+919786444980">97864 44980</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">
+            <span class="ic-wrap"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg></span>
+            <span data-en="Location" data-ta="இடம்">Location</span>
+          </div>
+          <div class="contact-item-value"><span data-en="Iluppur, Tamil Nadu 622102, India" data-ta="இலுப்பூர், தமிழ்நாடு 622102, இந்தியா">Iluppur, Tamil Nadu 622102, India</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-label">
+            <span class="ic-wrap"><svg viewBox="0 0 24 24" fill="none"><path d="M8 3h8v3.2c0 .5.2 1 .6 1.3l1.8 1.8c1.6 1.6 1.6 4.1 0 5.7l-.9.9c-.4.4-.4 1 0 1.4l1.5 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 3v3.2c0 .5-.2 1-.6 1.3L5.6 9.3c-1.6 1.6-1.6 4.1 0 5.7L11 20.4c1 1 2.6 1 3.6 0l.7-.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+            <span data-en="Facilities" data-ta="வசதிகள்">Facilities</span>
+          </div>
+          <div class="contact-item-value"><span data-en="OP · Lab · Pharmacy · X-ray" data-ta="OP · ஆய்வகம் · மருந்தகம் · எக்ஸ்-ரே">OP · Lab · Pharmacy · X-ray</span></div>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <div>
+          <b data-en="Not sure where to start?" data-ta="எங்கிருந்து தொடங்குவது எனத் தெரியவில்லையா?">Not sure where to start?</b>
+          <p data-en="Call ahead and our staff can guide you before you set out." data-ta="முன்பே அழைத்தால் எங்கள் ஊழியர்கள் நீங்கள் புறப்படும் முன் வழிகாட்டுவார்கள்.">Call ahead and our staff can guide you before you set out.</p>
+        </div>
+        <a href="tel:+919786444980" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .5 1 1V20c0 .6-.5 1-1 1C9.6 21 3 14.4 3 6.1c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span data-en="Call now" data-ta="இப்போது அழைக்க">Call now</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span><strong style="color:var(--maroon-900);" data-en="Sri Meenakshi Hospital" data-ta="ஸ்ரீ மீனாட்சி மருத்துவமனை">Sri Meenakshi Hospital</strong> · <span data-en="Iluppur, Tamil Nadu 622102" data-ta="இலுப்பூர், தமிழ்நாடு 622102">Iluppur, Tamil Nadu 622102</span></span>
+    <span><span data-en="Phone: 97864 44980" data-ta="தொலைபேசி: 97864 44980">Phone: 97864 44980</span></span>
+  </div>
+</footer>
+
+<a href="tel:+919786444980" class="call-bar">
+  <svg class="ic" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .5 1 1V20c0 .6-.5 1-1 1C9.6 21 3 14.4 3 6.1c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+  <span data-en="Call Sri Meenakshi Hospital — 97864 44980" data-ta="ஸ்ரீ மீனாட்சி மருத்துவமனையை அழைக்க — 97864 44980">Call Sri Meenakshi Hospital — 97864 44980</span>
+</a>
+
+<script>
+  // Language toggle
+  function setLang(lang){
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      var val = el.getAttribute('data-' + lang);
+      if (val !== null) el.textContent = val;
+    });
+    document.querySelectorAll('.lang-btn').forEach(function(b){
+      b.classList.toggle('active', b.dataset.lang === lang);
+    });
+  }
+  document.querySelectorAll('.lang-btn').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.lang); });
+  });
+
+  // Reveal department tiles on scroll
+  var items = document.querySelectorAll('.dept-item');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry, i){
+        if (entry.isIntersecting) {
+          setTimeout(function(){ entry.target.classList.add('in'); }, i * 90);
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    items.forEach(function(c){ io.observe(c); });
+  } else {
+    items.forEach(function(c){ c.classList.add('in'); });
+  }
+</script>
+</body>
+</html>
